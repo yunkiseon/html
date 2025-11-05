@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!--
+    공통 속성
+    -value : 값을 미리 생성할 때
+    -readnoly : 읽기만 가능(수정불가)
+    -required : 필수 입력 요구
+    -autofocus : 자동으로 특정 요소가 선택되도록 함
+    -disabled : 특정요소를 사용하지 못하게 함, 서버 전송 안됨
+    -->
+    <h1>input 요소의 공통 요소</h1>
+    <form action="" method="get">
+      <div>
+        <label for="name">이름</label>
+        <input type="text" name="name" id="name" value="홍길동" />
+      </div>
+      <div>
+        <label for="id">autofocus</label>
+        <input type="text" name="id" id="id" autofocus />
+      </div>
+      <div>
+        <label for="ip">readonly</label>
+        <input type="text" name="ip" id="ip" readonly value="121.10.152.11" />
+      </div>
+      <div>
+        <label for="fruit">required</label>
+        <input type="text" name="fruit" id="fruit" required />
+      </div>
+
+      <button type="submit">제출</button>
+    </form>
+  </body>
+</html>

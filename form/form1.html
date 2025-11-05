@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- 가장 많이 쓰는 태그 form
+    사용자로부터 입력받기 위한 양식을 작성하는 태그
+        -action : 전송한 정보를 처리할 경로
+        -method : 정보를 서버로 전송할 때 사용하는 방식 지정-> get, post
+        -autocomplete : 기본값 on, 이전 입력한 내용이 보인다. 자동완성기능 사용여부
+
+        get 방식 : 입력한 정보를 action 으로 보낸다. form 안에 입력한 값이 주소줄에 보임
+        시작 : http://121.160.42.69:5500/basic/form1.html
+        제출 : http://121.160.42.69:5500/basic/form1.html?name=%ED%99%8D%EA%B8%B8%EB%8F%99&age=34
+        post 방식 : 입력 값이 보이지 않음
+        submit 버튼은 기본적으로 form 안에 있어야 한다. 
+        1) type = "submit" : form 안 요소들을 action 에 적힌 곳으로 전송
+        2) tyope = "reset" : form 안 요소들을 초기화
+        3) <label for = ""> : 제목 텍스트 for 값을 input 의 id와 일치 시키면 input 속성에 포커스를 줄 수 있다.
+        4) type = "text" : text 입력 시 사용 짧은 문장에만 사용
+        5) type = "number" : 숫자만 입력
+
+    -->
+    <form action="" method="get" autocomplete="off">
+      <label for="name">이름</label>
+      <input type="text" name="name" id="name" />
+      <label for="age">나이</label>
+      <input type="number" name="age" id="age" />
+      <button type="submit">제출</button>
+      <button type="reset">초기화</button>
+    </form>
+  </body>
+</html>
